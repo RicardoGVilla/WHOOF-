@@ -17,9 +17,8 @@
       <div class="col-md-4">
         <%= link_to dog_path(dog) do %>
           <div class="card-category">
-            <% if dog.photo.present? %>
               <div class = "mx-0.5 dog-pics">
-                <%= cl_image_tag dog.photo.key, height: 150, width: 150, crop: :fill %>
+                <img src="/images/dog.jpg" >
               </div>
               <div class = "text-right">
                 <div class="card-body">
@@ -28,15 +27,6 @@
                   <p class="card-text text-right">Breed:<%= dog.breed %></p>
                 </div>
               </div>
-            <%else%>
-              <div class = "text-center">
-                <div class="card-body">
-                  <p class="card-text text-right"><strong><%= dog.name %></strong></p>
-                  <p class="card-text text-right">Price: $<%= dog.price %></p>
-                  <p class="card-text text-right">Breed:<%= dog.breed %></p>
-                </div>
-              </div>
-            <%end%>
           </div>
         <% end %>
       </div>
