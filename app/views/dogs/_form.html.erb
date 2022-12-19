@@ -4,12 +4,8 @@
       <div class="bg-white rounded p-3 shadow">
         <h2>Post your Dog</h2>
         <%= simple_form_for @dog do |f| %>
-          <%= f.input :name, placeholder: 'Morty' %>
-          <%= f.input :breed, placeholder: 'Corgi' %>
-          <%= f.input :skills, placeholder: 'driving your car' %>
-          <%= f.input :description, placeholder: 'Corgi that really cool' %>
-          <%= f.input :photo, as: :file, direct_upload: true %>
-          <%= f.input :price, placeholder: '100 pesos',:collection => 1..300 %>
+          <%= f.input :start_point, placeholder: 'Morty' %>
+          <%= f.input :end_point, placeholder: 'Corgi' %>
           <%= f.submit class: 'btn btn-outline-success' %>
           <%= link_to "Cancel", mydogs_url, class: 'btn btn-outline-danger' %>
         <% end %>
