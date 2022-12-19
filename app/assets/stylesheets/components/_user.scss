@@ -1,0 +1,42 @@
+.user {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.button1 {
+  background-color: #83BF21;
+  color:white;
+  border-radius: 15px;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-align: center;
+  }
+
+  .button2 {
+    background-color: #83BF21;
+    color:white;
+    border-radius: 15px;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    }
+
+    p {
+    font-weight: bold;
+    }
+
+
+    .owner {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .renter {
+      padding-left: 15px;
+      padding-right: 15px;
+
+    }
