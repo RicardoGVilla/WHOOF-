@@ -1,0 +1,71 @@
+.user {
+  display: flex;
+  padding-bottom: 15px;
+  padding-left: 210px;
+  padding-right:210px;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 16px;
+  padding: 8px 0px;
+}
+
+
+.button1 {
+  background-color: #83BF21;
+  color:white;
+  border-radius: 15px;
+  padding: 12px 24px;
+  text-decoration: none;
+  text-align: center;
+  }
+
+  .button2 {
+    background-color: #83BF21;
+    color:white;
+    border-radius: 15px;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
+    }
+
+    .title {
+    font-weight: bold;
+    font-size:25px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 60px;
+  }
+
+
+    .owner {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-family: Helvetica, sans-serif;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+    }
+
+    .renter {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-family: Helvetica, sans-serif;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+    }
+
+
+    .check {
+      color: #83BF21;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 14px;
+    }
