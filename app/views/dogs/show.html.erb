@@ -1,26 +1,15 @@
-<div class="container py-3">
-  <div class = "cards">
-      <div class="card">
-        <div class = "card-body">
-          <strong><%= @dog.name %> </strong>
-          <% if @dog.photo.present? %>
-          <div class="card-text">
-            <%= cl_image_tag @dog.photo.key, height: 300, width: 400, crop: :fill %>
-            <p class="card-text"> <strong> Name: </strong><%=@dog.name%></p>
+<div class="show-card-container">
+      <div class="show-card">
+        <div class = "show-image">
+          <%= cl_image_tag @dog.photo.key, height: 300, width: 400, crop: :fill %>
+        </div>
+        <div class = "show-description">
+          <p class="card-text"> <strong> Name: </strong><%=@dog.name%></p>
             <p class="card-text"> <strong> Breed: </strong> <%=@dog.breed%></p>
             <p class="card-text"> <strong> Price:$ </strong><%=@dog.price%></p>
             <p class="card-text"> <strong> Description: </strong><%=@dog.description%></p>
-          </div>
-          <%else%>
-          <div class="card-text">
-            <p class="card-text"> <strong> Name: </strong><%=@dog.name%></p>
-            <p class="card-text"> <strong> Breed: </strong> <%=@dog.breed%></p>
-            <p class="card-text"> <strong> Price:$ </strong><%=@dog.price%></p>
-            <p class="card-text"> <strong> Description: </strong><%=@dog.description%></p>
-          </div>
-          <%end%>
-          <%= link_to 'Add a booking',new_dog_booking_path(@dog), class: 'btn btn-outline-success' %>
-          <%= link_to 'Back',dogs_path, class: 'btn btn-outline-danger' %>
+             <%= link_to 'Add a booking',new_dog_booking_path(@dog), class: "button2" %>
+          <%= link_to 'Back',dogs_path, class: "button3" %>
         </div>
       </div>
   </div>
@@ -33,6 +22,7 @@ cursor: pointer;
 padding: 0;
 }
 </style>
+
   <div data-controller="map"
   id='map'
   data-map-api-key-value="<%= ENV['MAPBOX_API_KEI'] %>"
